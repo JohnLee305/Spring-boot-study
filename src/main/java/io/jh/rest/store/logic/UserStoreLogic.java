@@ -19,19 +19,19 @@ public class UserStoreLogic implements UserStore {
     }
 
     @Override
-    public String Create(User newUser) {
+    public String create(User newUser) {
         this.userMap.put(newUser.getId(), newUser);
         return newUser.getId();
 
     }
 
     @Override
-    public void Update(User newUser) {
+    public void update(User newUser) {
         this.userMap.put(newUser.getId(), newUser);
     }
 
     @Override
-    public void Delete(String id) {
+    public void delete(String id) {
         this.userMap.remove(id);
     }
 
