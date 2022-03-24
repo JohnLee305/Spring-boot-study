@@ -42,3 +42,14 @@
 ### 2022-03-21
 ##### [2-3] RESTful WebService 구현(1)
 - 실습.
+***
+### 2022-03-22
+#### [2-4] RESTful WebService 구현(2)
+- DI를 하는 세가지 방법
+  1. autiwired
+  2. 생성자를 통한 주입
+  3. Lombok의 @RequiredArgsConstructor (final 필드에만 주입 가)
+***
+### 2022-03-24
+#### [2-5] RESTful WebService 구현(3)
+- 테스트 기능 추가
