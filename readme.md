@@ -52,4 +52,5 @@
 ***
 ### 2022-03-24
 #### [2-5] RESTful WebService 구현(3)
-- 테스트 기능 추가
+- 테스트 기능 추가, 스프링부트에서의 단위테스트
+- beforeEach, afterEach 활용
