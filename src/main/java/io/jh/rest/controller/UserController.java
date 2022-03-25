@@ -3,10 +3,7 @@ package io.jh.rest.controller;
 import io.jh.rest.entity.User;
 import io.jh.rest.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class UserController {
@@ -20,9 +17,19 @@ public class UserController {
          return userService.register(newUser);
     }
 
-    @GetMapping("/users/id")
-    public User find (Stri ng id){
+    @GetMapping("/users/{id}")
+    public User find (@PathVariable String id){
         return userService.find(id);
+    }
+
+    @PutMapping("/users")
+    public void modify(@RequestBody User newUser){
+        userService.modify(newUser);
+    }
+
+    @DeleteMapping("/users/{id}")
+    public void remove(@PathVariable String id){
+        userService.remove(id);
     }
 
 }
