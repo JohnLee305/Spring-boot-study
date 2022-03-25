@@ -54,3 +54,8 @@
 #### [2-5] RESTful WebService 구현(3)
 - 테스트 기능 추가, 스프링부트에서의 단위테스트
 - beforeEach, afterEach 활용
+***
+### 2022-03-25
+#### [2-6] RESTful WebService 구현(4)
+- 궁금증 : Lombok을 써서 생성자를 주입하는거랑 @Autowired로 하는거랑 차이가 뭔지? 뭐가 더 좋은지? 
+- 왜 롬복이 나와야 했는지?
